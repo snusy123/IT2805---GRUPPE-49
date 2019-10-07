@@ -1,0 +1,11 @@
+.hh-image {
+    width: 100vw;
+    height: calc(100vh - var(--nav-size));
+
+    box-sizing: border-box;
+    padding: 0 44px;
+
+    background: var(--color-bk) url('./img/trevi.jpg') center no-repeat;
+    background-size: contain;
+    overflow: hidden;
+}

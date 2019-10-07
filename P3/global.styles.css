@@ -1,0 +1,11 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --color-bk: black;
+    --color-main: red;
+
+    --nav-size: 44px;
+}
