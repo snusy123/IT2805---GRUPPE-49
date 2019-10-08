@@ -22,14 +22,20 @@ section {
 
 /* Text */
 
-.header h1 {
+h1 {
     font-size: 27px;
     font-weight: 700;
 }
 
-.header h2 {
+h2 {
     font-size: 24px;
     font-weight: 600;
+}
+
+h3 {
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: -8px;
 }
 
 .header span {
@@ -66,7 +72,3 @@ ul li li::before {
 ul li li li::before {
     content: ' | \a0\a0\a0 | \a0\a0\a0 +− ';
 }
-
-/* ul:not(ul ul)>li:last-child {
-    color: red;
-} */
