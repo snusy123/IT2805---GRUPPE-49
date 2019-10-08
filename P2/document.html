@@ -1,46 +1,183 @@
-<html lang="nb" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>P2</title>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Gruppe 49">
+        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 
-    <link rel="stylesheet" href="document.css">
-  </head>
-  <body>
-    <p>
-        Nettsiden deles opp i seksjoner som alle har sitt eget HTML document, med et tilhørende CSS document. Alle seksjonene kan settes sammen i hovedsiden med JS/PHP eller kompileres sammen før nettsiden publiseres.
-        Dette lar oss bruke github til å jobbe på hovedsiden samtidig. Stiler som deles mellom flere eller alle seksjoner lagres i ett CSS document som også importere alle CSS filene.
-    </p>
-    <p>
-        <h2>Seksjoner</h2>
-        <ul>
-            <li>
-                <h3>Navbar: </h3>
-                <p></p>
-                <p>Linker: meny - om oss - bestill bord - kontakt</p>
-                <p>Blir til dropdown meny når siden er for liten.</p>
-            </li>
-            <li>
-                <h3>Forside: </h3>
-                <p>Heldekkende bakgrunnsbilde med border på sidene.</p>    
-            </li>
-            <li>
-                <h3>Meny:</h3>
-                <p></p>
-            </li>
-            <li>bordbestilling</li>
-            <li>Om oss</li>
-            <li>Kontaktinfo</li>
-        </ul>
-        <p>+ Bordbekreftelse</p>
+        <title>P2 - Design Guidelines</title>
 
-        <h2></h2>
-    </p>
-    <p>
-        <h2>Farger</h2>
-        <ul></ul>
-    </p>
-    <p>
-        Hovedtanke: Få bordbestillinger. Aka. ha 'Bestill Bord' over alt.
-    </p>
-  </body>
+        <link rel="stylesheet" href="document.css">
+    </head>
+    <body>
+        <div class="document-wrapper">
+            <h1 class="header">P2 - Design Guidelines</h1>
+            <section>
+                <h2 class="header">
+                    <span>1 </span>
+                    Document Details
+                </h2>
+                <div class="content">
+                    <p><span>Group 49 -</span> Lars, Guri, Imre, Emil and Morten</p>
+                    <p><span>IT2805</span> October 2019</p>
+                </div>
+            </section>
+            <section>
+                <h2 class="header">
+                    <span>2 </span>
+                    Administrative Details
+                </h2>
+                <div class="content">
+                    <p><span>Website name:</span> Capisco Benissimo </p>
+                    <p><span>Client:</span> Jonas Konte</p>
+                    <p><span>Contact:</span> Jonas Konte</p>
+                </div>
+            </section>
+            <section>
+                <h2 class="header">
+                    <span>3 </span>
+                    Purpose, Goals and Audience
+                </h2>
+                <div class="content">
+                    <p>
+                        In creating this web-site, Jonas Konte wishes to reach out to the public and increase the overall awareness 
+                        of the restaurant Capisco benissimo, and increase the potential for customer growth. This newly established enterprise wishes to
+                        offer customers the opportunity to dine in a rural location, that is not only close to downtown Trondheim,
+                        but also offers a variety of high quality meals inspired by his upbringing in Piemonte.
+                    </p>
+                    <p>
+                        Our mission is to aid Jonas
+                        Konte in his desire to inform the public of this intriguing new restaurant, seldom seen in this segment. Combined
+                        with providing the visitor with conventional features like viewing the menu, booking a table, and a way of giving feedback.
+                        We will carefully design and structure our website so that it fits the needs of higher middle class families, which
+                        is the designated costumer group.
+                    </p>
+                </div>
+            </section>
+            <section>
+                <h2 class="header">
+                    <span>4 </span>
+                    Navigational Structure
+                </h2>
+                <div class="content">
+                    <p>
+                        The page will be a SPA (Single Page Application) meaning the entire page will be viewed as a single index.html file. 
+                        During the development process we will split each section of the page up into components. Each component can be developed independently (in seperate component.html files), 
+                        and then compiled (or parsed on load) into the index file.
+                    </p>
+                    <p>
+                        Each component will also have its own accompanying style.css file which will contain the style of the component. 
+                        These will then be imported into the global.styles.css stylesheet that contain all styles for the page.
+                    </p>
+                    <p>
+                        The naviational structure of the website is standard for SPA style websites. The navbar will be the main method of naviation.
+                        When the user clicks a link on the navbar, the browser should scroll the appropriate element into view. 
+                        Using this very standard method of navigation means the user will be familiar with the navigational structure of the page only seconds after opening the page for the first time. 
+                    </p>
+                </div>
+            </section>
+            <section>
+                <h2 class="header">
+                    <span>5 </span>
+                    Page Layout and Appearance
+                </h2>
+                <div class="content">
+
+                </div>
+            </section>
+            <section>
+                <h2 class="header">
+                    <span>6 </span>
+                    Content
+                </h2>
+                <div class="content">
+
+                </div>
+            </section>
+            <section>
+                <h2 class="header">
+                    <span>7 </span>
+                    Minimum Requirements
+                </h2>
+                <div class="content">
+                    
+                </div>
+            </section>
+            <section>
+                <h2 class="header">
+                    <span>8 </span>
+                    Plan
+                </h2>
+                <div class="content">
+                    <ul>
+                        <li>index.html</li>
+                        <li>global.styles.css</li>
+                        <li>components
+                            <ul>
+                                <li>navbar
+                                <ul>
+                                    <li>component.html</li>
+                                    <li>style.css</li>
+                                </ul>
+                                </li>
+                                <li>header
+                                    <ul>
+                                        <li>component.html</li>
+                                        <li>style.css</li>
+                                    </ul>
+                                </li>
+                                <li>booking
+                                    <ul>
+                                        <li>component.html</li>
+                                        <li>style.css</li>
+                                    </ul>
+                                </li>
+                                <li>menu
+                                    <ul>
+                                        <li>component.html</li>
+                                        <li>style.css</li>
+                                    </ul>
+                                </li>
+                                <li>about
+                                    <ul>
+                                        <li>component.html</li>
+                                        <li>style.css</li>
+                                    </ul>
+                                </li>
+                                <li>contact
+                                    <ul>
+                                        <li>component.html</li>
+                                        <li>style.css</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>assets
+                            <ul>
+                                <li>img
+                                    <ul>
+                                        <li>header-1.png</li>
+                                        <li>header-2.png</li>
+                                        <li>header-3.png</li>
+                                    </ul>
+                                </li>
+                                <li>code
+                                    <ul>
+                                        <li>slideshow.js</li>
+                                        <li>map.js</li>
+                                        <li>navbar.js</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>dev
+                            <ul>
+                                <li>framework.js</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </body>
 </html>
