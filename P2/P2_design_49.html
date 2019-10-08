@@ -14,28 +14,28 @@
             <h1 class="header">P2 - Design Guidelines</h1>
             <section>
                 <h2 class="header">
-                    <span>1 </span>
+                    <span class="bold">1 </span>
                     Document Details
                 </h2>
                 <div class="content">
-                    <p><span>Group 49 -</span> Lars, Guri, Imre, Emil and Morten</p>
-                    <p><span>IT2805</span> October 2019</p>
+                    <p><span class="bold">Group 49 -</span> Lars, Guri, Imre, Emil and Morten</p>
+                    <p><span class="bold">IT2805</span> October 2019</p>
                 </div>
             </section>
             <section>
                 <h2 class="header">
-                    <span>2 </span>
+                    <span class="bold">2 </span>
                     Administrative Details
                 </h2>
                 <div class="content">
-                    <p><span>Website name:</span> Capisco Benissimo </p>
-                    <p><span>Client:</span> Jonas Konte</p>
-                    <p><span>Contact:</span> Jonas Konte</p>
+                    <p><span class="bold">Website name:</span> Capisco Benissimo </p>
+                    <p><span class="bold">Client:</span> Jonas Konte</p>
+                    <p><span class="bold">Contact:</span> Jonas Konte</p>
                 </div>
             </section>
             <section>
                 <h2 class="header">
-                    <span>3 </span>
+                    <span class="bold">3 </span>
                     Purpose, Goals and Audience
                 </h2>
                 <div class="content">
@@ -56,7 +56,7 @@
             </section>
             <section>
                 <h2 class="header">
-                    <span>4 </span>
+                    <span class="bold">4 </span>
                     Navigational Structure
                 </h2>
                 <div class="content">
@@ -78,7 +78,7 @@
             </section>
             <section>
                 <h2 class="header">
-                    <span>5 </span>
+                    <span class="bold">5 </span>
                     Page Layout and Appearance
                 </h2>
                 <div class="content">
@@ -119,7 +119,7 @@
             </section>
             <section>
                 <h2 class="header">
-                    <span>6 </span>
+                    <span class="bold">6 </span>
                     Content
                 </h2>
                 <div class="content">
@@ -147,8 +147,10 @@
                                 hours in style with the rest of the page, but with a background color that will give it a kind of "pop" so that it is easy to spot. 
                                 The text will be centered.
                             </p>
-                            <img src="./images/home.jpg">
-                            <img src="./images/opening_hours_m_kart.jpg">
+                            <div class="img-container">
+                                <img src="./images/home.jpg">
+                                <img src="./images/opening_hours_m_kart.jpg">
+                            </div>
                         </li>
                         <li>
                             <h3>Booking</h3>
@@ -160,8 +162,10 @@
                                 like name, phone number and e-mail, we ffound it natural to provide more space. It is also possible for the user to add any comments in a box below, in case they have any allergies or spesific needs. Once the user has placed an order, it is important that he / she receives a validation
                                 that it has been sent and received. A page will then appear and tell the user this.    
                             </p>
-                            <img src="./images/booking.jpg">
-                            <img src="./images/booking_validation.jpg">
+                            <div class="img-container">
+                                <img src="./images/booking.jpg">
+                                <img src="./images/booking_validation.jpg">
+                            </div>
                         </li>
                         <li>
                             <h3>Menu</h3>
@@ -170,8 +174,10 @@
                                 starter, main course, dessert etc. And then displayed as a classic menu with a fine line in the middle and courses on both sides of it. The name of the dishes are
                                 written in a red font and it's description in a light grey, we feel like this distinction will make the menu easier to navigate. A background color of soft beige is not only pleasant to look at, it also blends in well with the two font colors.
                             </p>
-                            <img src="./images/menu.jpg">
-                            <img src="./images/menu_details.jpg">
+                            <div class="img-container">
+                                <img src="./images/menu.jpg">
+                                <img src="./images/menu_details.jpg">
+                            </div>
                         </li>
                         <li>
                             <h3>About</h3>
@@ -179,7 +185,9 @@
                                 This should tell the user general info about the restaurant such as origin, idea behind, the founder and the food. It will contain headers of the topics, 
                                 paragraphs and pictures. 
                             </p>
-                            <img src="./images/about_us.jpg">
+                            <div class="img-container">
+                                <img src="./images/about_us.jpg">
+                            </div>
                         </li>
                         <li>
                             <h3>Contact</h3>
@@ -189,14 +197,16 @@
                                 retrieve the coordinates and efficiently get from a to b. This map will stretch over from right to left, but leave room for the black margin which is 
                                 consistent throughout the whole page.    
                             </p>
-                            <img src="./images/contact_us.jpg">
+                            <div class="img-container">
+                                <img src="./images/contact_us.jpg">
+                            </div>
                         </li>
                     </ol>
                 </div>
             </section>
             <section>
                 <h2 class="header">
-                    <span>7 </span>
+                    <span class="bold">7 </span>
                     Minimum Requirements
                 </h2>
                 <div class="content">
@@ -208,79 +218,115 @@
             </section>
             <section>
                 <h2 class="header">
-                    <span>8 </span>
+                    <span class="bold">8 </span>
                     Plan
                 </h2>
-                <div class="content">
-                    <ul>
-                        <li>index.html</li>
-                        <li>global.styles.css</li>
-                        <li>components
-                            <ul>
-                                <li>navbar
+                <div class="content container">
+                    <div>
+                        <p>
+                            <span class="bold">Filestructure</span>
+                        </p>
+                        <ul>
+                            <li>index.html</li>
+                            <li>global.styles.css</li>
+                            <li>components
                                 <ul>
-                                    <li>component.html</li>
-                                    <li>style.css</li>
+                                    <li>navbar
+                                    <ul>
+                                        <li>component.html</li>
+                                        <li>style.css</li>
+                                    </ul>
+                                    </li>
+                                    <li>header
+                                        <ul>
+                                            <li>component.html</li>
+                                            <li>style.css</li>
+                                        </ul>
+                                    </li>
+                                    <li>booking
+                                        <ul>
+                                            <li>component.html</li>
+                                            <li>style.css</li>
+                                        </ul>
+                                    </li>
+                                    <li>menu
+                                        <ul>
+                                            <li>component.html</li>
+                                            <li>style.css</li>
+                                        </ul>
+                                    </li>
+                                    <li>about
+                                        <ul>
+                                            <li>component.html</li>
+                                            <li>style.css</li>
+                                        </ul>
+                                    </li>
+                                    <li>contact
+                                        <ul>
+                                            <li>component.html</li>
+                                            <li>style.css</li>
+                                        </ul>
+                                    </li>
                                 </ul>
-                                </li>
-                                <li>header
-                                    <ul>
-                                        <li>component.html</li>
-                                        <li>style.css</li>
-                                    </ul>
-                                </li>
-                                <li>booking
-                                    <ul>
-                                        <li>component.html</li>
-                                        <li>style.css</li>
-                                    </ul>
-                                </li>
-                                <li>menu
-                                    <ul>
-                                        <li>component.html</li>
-                                        <li>style.css</li>
-                                    </ul>
-                                </li>
-                                <li>about
-                                    <ul>
-                                        <li>component.html</li>
-                                        <li>style.css</li>
-                                    </ul>
-                                </li>
-                                <li>contact
-                                    <ul>
-                                        <li>component.html</li>
-                                        <li>style.css</li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>assets
-                            <ul>
-                                <li>img
-                                    <ul>
-                                        <li>header-1.png</li>
-                                        <li>header-2.png</li>
-                                        <li>header-3.png</li>
-                                    </ul>
-                                </li>
-                                <li>code
-                                    <ul>
-                                        <li>slideshow.js</li>
-                                        <li>map.js</li>
-                                        <li>navbar.js</li>
-                                        <li>booking.js</li>
-                                        <li>menu.js</li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>dev
-                            <ul>
-                                <li>framework.js</li>
-                            </ul>
-                        </li>
-                    </ul>
+                            </li>
+                            <li>assets
+                                <ul>
+                                    <li>img
+                                        <ul>
+                                            <li>header-1.png</li>
+                                            <li>header-2.png</li>
+                                            <li>header-3.png</li>
+                                        </ul>
+                                    </li>
+                                    <li>code
+                                        <ul>
+                                            <li>slideshow.js</li>
+                                            <li>map.js</li>
+                                            <li>navbar.js</li>
+                                            <li>booking.js</li>
+                                            <li>menu.js</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>dev
+                                <ul>
+                                    <li>framework.js</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p>
+                            <span class="bold">Testing and final changes</span> 05.11 - 09.11
+                        </p>
+                        <div class="tight">
+                            <span class="bold">Morten</span>
+                            <p>Header - <span class="bold">20.08</span></p>
+                            <p>Slideshow.js - <span class="bold">20.08</span></p> 
+                            <p>About - <span class="bold">25.08</span></p>
+                        </div>
+                        <div class="tight">
+                            <span class="bold">Lars</span>
+                            <p>Booking - <span class="bold">20.08</span></p>
+                            <p>Validation.js - <span class="bold">25.08</span></p>
+                        </div>
+                        <div class="tight">
+                            <span class="bold">Guri</span>
+                            <p>Contact - <span class="bold">20.08</span></p> 
+                            <p>Map.js - <span class="bold">25.08</span></p>
+                        </div>
+                        <div class="tight">
+                            <span class="bold">Imre</span>
+                            <p>Navbar - <span class="bold">25.08</span></p> 
+                            <p>Navbar.js - <span class="bold">25.08</span></p>
+                        </div>
+                        <div class="tight">
+                            <span class="bold">Emil</span>
+                            <p>Menu - <span class="bold">25.08</span></p> 
+                            <p>Menu.js - <span class="bold">25.08</span></p>
+                        </div>
+                    </div>
                 </div>
             </section>
         </div>

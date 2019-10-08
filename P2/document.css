@@ -19,6 +19,11 @@ section {
     margin: 40px 0;
 }
 
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
 
 /* Text */
 
@@ -38,7 +43,7 @@ h3 {
     margin-bottom: -8px;
 }
 
-.header span {
+.bold {
     font-weight: 300;
     color: #505050;
 }
@@ -53,8 +58,21 @@ h3 {
     font-weight: 600;
 }
 
+.tight p {
+    margin: 0;
+    line-height: 1.2;
+}
 
-/* List */
+.tight {
+    margin: 10px 0;
+}
+
+
+/* Lists */
+
+ol li {
+    margin: 25px 0;
+}
 
 ul {
     list-style-type: none;
@@ -71,4 +89,22 @@ ul li li::before {
 
 ul li li li::before {
     content: ' | \a0\a0\a0 | \a0\a0\a0 +− ';
+}
+
+
+/* Images */
+
+.img-container {
+    width: 100%;
+    height: 350px;
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    padding: 10px 0;
+}
+
+.img-container>* {
+    height: 100%;
 }
