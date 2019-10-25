@@ -5,7 +5,7 @@
     box-sizing: border-box;
     padding: 0 44px;
 
-    background: var(--color-bk) url('./img/trevi.jpg') center no-repeat;
+    background: var(--color-bk) url('./assets/img/header-1.jpg') center no-repeat;
     background-size: contain;
     overflow: hidden;
 }
