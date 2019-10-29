@@ -1,5 +1,35 @@
-.nav {
+.gn-bar {
+    /* Position */
+    position: fixed;
     height: var(--nav-size);
-    background-color: red; 
-    text-align: center;
+    width: 100%;
+    z-index: 9999;
+
+    /* Unselectable text */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    /*  */
+    background-color: #303030;
+}
+
+.gn-content {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+
+#gn-menu-state:checked .gn-content {
+    color: red;
+    height: 100px;
+}
+
+.gn-global-navigation::after {
+    height: var(--nav-size);
+    display: table;
+    content: '';
+    clear: both;
 }
