@@ -1,6 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap');
+
+/* Style Reset */
 * {
     padding: 0;
     margin: 0;
+}
+
+/* Wrapper */
+#home {
+    background-color: #303030;
 }
 
 :root {
@@ -8,5 +16,11 @@
     --color-main: red;
 
     --nav-size: 44px;
+    --nav-size-s: 44px;
     --max-width: 980px;
+}
+
+/* Typography */
+h1, span, p {
+    font-family: 'Open Sans', sans-serif;
 }

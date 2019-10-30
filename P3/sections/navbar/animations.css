@@ -1,0 +1,13 @@
+/** Small Breakpoint (Phone) */
+@media only screen and (max-width: 767px) {
+    /* Animation Delays */
+    #gn-menustate:not(:checked) ~ .gn-content .gn-menu-item:nth-child(2) { transition-delay: 225ms; }
+    #gn-menustate:not(:checked) ~ .gn-content .gn-menu-item:nth-child(3) { transition-delay: 175ms; }
+    #gn-menustate:not(:checked) ~ .gn-content .gn-menu-item:nth-child(4) { transition-delay: 125ms; }
+    #gn-menustate:not(:checked) ~ .gn-content .gn-menu-item:nth-child(5) { transition-delay: 75ms; }
+    
+    #gn-menustate:checked ~ .gn-content .gn-menu-item:nth-child(2) { transition-delay: 100ms; }
+    #gn-menustate:checked ~ .gn-content .gn-menu-item:nth-child(3) { transition-delay: 150ms; }
+    #gn-menustate:checked ~ .gn-content .gn-menu-item:nth-child(4) { transition-delay: 200ms; }
+    #gn-menustate:checked ~ .gn-content .gn-menu-item:nth-child(5) { transition-delay: 250ms; }
+}

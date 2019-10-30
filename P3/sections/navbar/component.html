@@ -1,14 +1,21 @@
-<nav class="gn-global-navigation">
-    <div class="gn-bar">
-        <input id="gn-menustate" type="checkbox" style="display:none" checked>
+<nav id="navbar">
+    <div class="gn-header">
+        
+    </div>
+    <div class="gn-navbar">
+        <input id="gn-menustate" type="checkbox" style="display: none;">
+        <div class="ham-toggle" onclick="navbarToggle()">
+            <div class="ham-bar"></div>
+            <div class="ham-bar"></div>
+        </div>
         <div class="gn-content">
-            <div class="gn-header">
-                <div class="gn-item gn-logo">A</div>
-                <div class="gn-item">B</div>
-            </div>
-            <div class="gn-list">
-                
-            </div>
+            <ul class="gn-list">
+                <li class="gn-item gn-logo-item" onclick="navigateTo('home')"><span>Logo</span></li>
+                <li class="gn-item gn-menu-item" onclick="navigateTo('booking')"><span>Booking</span></li>
+                <li class="gn-item gn-menu-item" onclick="navigateTo('menu')"><span>Menu</span></li>
+                <li class="gn-item gn-menu-item" onclick="navigateTo('about')"><span>About Us</span></li>
+                <li class="gn-item gn-menu-item" onclick="navigateTo('contact')"><span>Contact Us</span></li>
+            </ul>
         </div>
     </div>
 </nav>

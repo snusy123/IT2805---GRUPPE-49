@@ -1,8 +1,10 @@
-.gn-bar {
+@import 'sections/navbar/animations.css';
+@import 'sections/navbar/hamburger.css';
+
+.gn-navbar {
     /* Position */
     position: fixed;
-    height: var(--nav-size);
-    width: 100%;
+    width: 100vw;
     z-index: 9999;
 
     /* Unselectable text */
@@ -11,23 +13,114 @@
     -ms-user-select: none;
     user-select: none;
 
-    /*  */
-    background-color: #303030;
+    /* Blur Background */
+    backdrop-filter: saturate(180%) blur(20px);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+
+    /* Color */
+    background-color: #303030dc;
 }
 
+/* Content Wrapper */
 .gn-content {
     max-width: var(--max-width);
     margin: 0 auto;
+    padding: 0 44px;
     position: relative;
     z-index: 2;
 }
 
-#gn-menu-state:checked .gn-content {
-    color: red;
-    height: 100px;
+.gn-list {
+    list-style-type: none;
+    color: #fbf6e5;
 }
 
-.gn-global-navigation::after {
+/* Items Style */
+.gn-item {
+    font-size: 21px;
+    line-height: var(--nav-size);
+}
+
+/* ARIA Label for Logo */
+.gn-logo-item span {
+    visibility: hidden;
+}
+
+/** Large Breakpoint (Laptop/Tablet) */
+@media only screen and (min-width: 768px) {
+    .gn-list {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    .gn-item {
+        transition: opacity 0.30s ease-in-out;
+        cursor: pointer;
+    }
+
+    .gn-item:hover {
+        opacity: 0.8;
+    }
+
+    .gn-logo-item {
+        display: none;
+    }    
+}
+
+/** Small Breakpoint (Phone) */
+@media only screen and (max-width: 767px) {
+    /* Dropdown Menu */
+    #gn-menustate:checked ~ .gn-content .gn-list {
+        height: 100vh;
+    }
+
+    #gn-menustate:checked ~ .gn-content .gn-menu-item {
+        transition: transform 0.40s cubic-bezier(0.32, 0.08, 0.24, 1) 0.08s, opacity 0.30s ease-in-out;
+        transform: translateY(0);
+        opacity: 0.8;
+    }
+
+    /* Menu Items */
+    .gn-list {
+        /* Animate Dropdown */
+        transition: height 0.66s cubic-bezier(0.645, 0.045, 0.355, 1);
+        height: var(--nav-size);
+        overflow: hidden;
+    }
+
+    /* Logo */
+    .gn-logo-item {
+        height: var(--nav-size);
+        margin-bottom: 20px;
+
+        background-image: url('https://oliviarestauranter.no/wp-content/uploads/2017/04/logo.svg');
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    /* Menu Text Link */
+    .gn-menu-item {
+        transform: translateY(-5px);
+        transition: transform 0.43s cubic-bezier(0.52, 0.16, 0.52, 0.84) 69ms, opacity 0.30s ease-in-out;
+        opacity: 0;
+    }
+
+    /* Menu Item Seperator */
+    .gn-menu-item::after {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 1px;
+        background-color: #383838;
+    }
+}
+
+
+/* Clearfix (Fixed Navbar) */
+#navbar::after {
     height: var(--nav-size);
     display: table;
     content: '';
