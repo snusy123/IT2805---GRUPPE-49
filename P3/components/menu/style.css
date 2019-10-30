@@ -8,24 +8,7 @@
   padding: 0%;
 }
 
-h1 {
-  text-align: center;
-  font-size: 32px;
-  color: red;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 525;
-}
-
-p {
-  text-align: left;
-  font-size: 24px;
-  color: lightgray;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 525;
-  margin-top: 0%;
-}
-
-button {
+.mm-button {
   text-align: center;
   font-size: 24px;
   color:red;
@@ -37,22 +20,15 @@ button {
   transition: 0.3s;
 }
 
-button:hover {
+.mm-button:hover {
   color: darkred;
 }
 
-.buttons{
+.mm-buttons{
   display: none;
 }
 
-hr {
-    border-top: 2px solid grey;
-    opacity: .5;
-    max-width: 50%;  
-    margin: 10px auto;
-}
-
-.menu-item .buttons:checked ~ button div {
+.mm-menu-item .buttons:checked ~ button div {
   display: block;
   line-height:0;
   height: 0;
@@ -60,14 +36,14 @@ hr {
   transition: 1s;
 }
 
-button::after {
+.mm-button::after {
   content: '';
   position: relative;
   width: 500px;
   border-bottom: 1px gray solid;
 }
 
-ul {
+.mm-meny {
   display: flex;
   flex-direction: column;
   width: 75%;
@@ -78,11 +54,7 @@ ul {
   padding: 0%;
 }
 
-h2 {
-  color: red;
-}
-
-.flex-container {
+.mm-flex-container {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -90,19 +62,19 @@ h2 {
   padding: 0%;
   overflow:auto;
 }
-.flex-container .itemsL {
+.mm-flex-container .itemsL {
   display: flex;
   width: 45%;
   overflow:auto;
   flex-direction: column;
 }
-.flex-container .itemsR {
+.mm-flex-container .itemsR {
   display: flex;
   width: 45%;
   overflow:auto;
   flex-direction: column;
 }
-.splitter {
+.mm-splitter {
   display: flex;
   overflow:auto;
   flex-direction: column;
@@ -110,12 +82,12 @@ h2 {
   margin-left: 5%;
   margin-right: 5%;
 }
-.menu-item {
+.mm-menu-item {
   display: flex;
   justify-content: center;
   width: 100%;
 }
-#test {
+.mm-click-buttons {
   margin: 0%;
   padding: 0%;
   width: 100%;
