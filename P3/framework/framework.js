@@ -15,20 +15,21 @@ function minify(content) {
     //OnDOMReady
     document.onreadystatechange = function() {
         if (document.readyState === "interactive") {
-            loadComponents();
-
-            document.dispatchEvent(new Event("DOMReady"));
+            loadComponents().then(() => document.dispatchEvent(new Event("DOMReady")));
         }
     }
 
     // Fetch and load components to main page
     function loadComponents() {
-        var components = document.querySelectorAll("[data-component]");
+        const components = document.querySelectorAll("[data-component]");
+        
+        markup = []
+        styles = []
 
         for(let i = 0; i < components.length; i++) {
             let id = components[i].dataset.component;
             
-            fetch(`./sections/${id}/component.html`)
+            markup[i] = fetch(`./sections/${id}/component.html`)
                 .then(data => data.text())
                 .then(html => {
                     let component = document.createElement('template');
@@ -36,7 +37,7 @@ function minify(content) {
                     components[i].replaceWith(component.content.firstChild);
                 })
         
-            fetch(`./sections/${id}/style.css`)
+            styles[i] = fetch(`./sections/${id}/style.css`)
                 .then(data => data.text())
                 .then(text => {
                     let style = document.createElement('style');
@@ -44,6 +45,8 @@ function minify(content) {
                     document.head.appendChild(style);    
                 })
         }
+
+        return Promise.all(markup, styles);
     }
 
 

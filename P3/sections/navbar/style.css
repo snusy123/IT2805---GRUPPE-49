@@ -1,9 +1,9 @@
 @import 'sections/navbar/animations.css';
 @import 'sections/navbar/hamburger.css';
 
-.gn-navbar {
+#navbar {
     /* Position */
-    position: fixed;
+    position: absolute;
     width: 100vw;
     z-index: 9999;
 
@@ -19,6 +19,12 @@
 
     /* Color */
     background-color: #303030dc;
+}
+
+.sticky {
+    background-color: red;
+    position: fixed !important;
+    top: 0;
 }
 
 /* Content Wrapper */
@@ -39,15 +45,17 @@
 .gn-item {
     font-size: 21px;
     line-height: var(--nav-size);
-}
-
-/* ARIA Label for Logo */
-.gn-logo-item span {
-    visibility: hidden;
+    font-weight: 400;
 }
 
 /** Large Breakpoint (Laptop/Tablet) */
 @media only screen and (min-width: 768px) {
+    .gn-header {
+        text-align: center;
+        color: #fbf6e5;
+        font-size: 27px;
+    }
+
     .gn-list {
         display: flex;
         justify-content: space-evenly;
@@ -63,10 +71,6 @@
     .gn-item:hover {
         opacity: 0.8;
     }
-
-    .gn-logo-item {
-        display: none;
-    }    
 }
 
 /** Small Breakpoint (Phone) */
@@ -101,6 +105,11 @@
         background-repeat: no-repeat;
     }
 
+    /* Accessability Label for Logo */
+    .gn-logo-item span {
+        visibility: hidden;
+    }
+
     /* Menu Text Link */
     .gn-menu-item {
         transform: translateY(-5px);
@@ -116,11 +125,15 @@
         height: 1px;
         background-color: #383838;
     }
+
+    .gn-header {
+        display: none;
+    }
 }
 
 
 /* Clearfix (Fixed Navbar) */
-#navbar::after {
+.gn-navbar::after {
     height: var(--nav-size);
     display: table;
     content: '';
