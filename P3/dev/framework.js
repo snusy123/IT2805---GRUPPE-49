@@ -29,7 +29,7 @@ function minify(content) {
         for(let i = 0; i < components.length; i++) {
             let id = components[i].dataset.component;
             
-            markup[i] = fetch(`./sections/${id}/component.html`)
+            markup[i] = fetch(`./components/${id}/component.html`)
                 .then(data => data.text())
                 .then(html => {
                     let component = document.createElement('template');
@@ -37,7 +37,7 @@ function minify(content) {
                     components[i].replaceWith(component.content.firstChild);
                 })
         
-            styles[i] = fetch(`./sections/${id}/style.css`)
+            styles[i] = fetch(`./components/${id}/style.css`)
                 .then(data => data.text())
                 .then(text => {
                     let style = document.createElement('style');
