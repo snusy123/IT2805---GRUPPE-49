@@ -1,3 +1,20 @@
-<nav class="nav">
-    <div class="nav-logo">LOGO</div>
-</nav>
+<nav class="gn-navbar">
+  <div class="gn-header">
+      <h1>Capisco Benissimo</h1>
+  </div>
+  <div id="navbar">
+      <input id="gn-menustate" type="checkbox" style="display: none;">
+      <div class="ham-toggle" onclick="navbarToggle()">
+          <div class="ham-bar"></div>
+          <div class="ham-bar"></div>
+      </div>
+      <div class="gn-content">
+          <ul class="gn-list">
+              <li class="gn-item gn-logo-item" onclick="navigateTo('home')"><span>Home</span></li>
+              <li class="gn-item gn-menu-item" onclick="navigateTo('booking')"><span>Booking</span></li>
+              <li class="gn-item gn-menu-item" onclick="navigateTo('menu')"><span>Menu</span></li>
+              <li class="gn-item gn-menu-item" onclick="navigateTo('about')"><span>About Us</span></li>
+              <li class="gn-item gn-menu-item" onclick="navigateTo('contact')"><span>Contact Us</span></li>
+          </ul>
+      </div>
+  </div>

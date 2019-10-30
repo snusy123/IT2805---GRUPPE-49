@@ -1,0 +1,31 @@
+/** Small Breakpoint (Phone) */
+@media only screen and (max-width: 767px) {
+    .ham-toggle {
+        position: absolute;
+        z-index: 3;
+
+        height: var(--nav-size);
+        width: var(--nav-size);
+
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    .ham-bar {
+        background-color: #fbf6e5;
+        margin: 6px 0;
+        transition: 0.4s;
+
+        border-radius: 10px;
+        width: 25px;
+        height: 3px;
+    }
+
+    #gn-menustate:checked + .ham-toggle .ham-bar:nth-child(1) {
+        transform: rotate(-45deg) translate(-9px, 6px);
+    }
+
+    #gn-menustate:checked ~ .ham-toggle .ham-bar:nth-child(2) {
+        transform: rotate(45deg) translate(-8px, -8px);
+    }
+}
