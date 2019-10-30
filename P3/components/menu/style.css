@@ -1,4 +1,122 @@
-#menu {
-    height: 130vh;
-    color: white;
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+#mainMenu {
+  background-color: #fbf6e5;
+  display: flex;
+  justify-content: center;
+  width: 75%;
+  margin: 0%;
+  padding: 0%;
+}
+
+h1 {
+  text-align: center;
+  font-size: 32px;
+  color: red;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 525;
+}
+
+p {
+  text-align: left;
+  font-size: 24px;
+  color: lightgray;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 525;
+  margin-top: 0%;
+}
+
+button {
+  text-align: center;
+  font-size: 24px;
+  color:red;
+  font-weight: 525;
+  background:none;
+  border: none;
+  outline: none; 
+  margin: 0 auto;
+  transition: 0.3s;
+}
+
+button:hover {
+  color: darkred;
+}
+
+.buttons{
+  display: none;
+}
+
+hr {
+    border-top: 2px solid grey;
+    opacity: .5;
+    max-width: 50%;  
+    margin: 10px auto;
+}
+
+.menu-item .buttons:checked ~ button div {
+  display: block;
+  line-height:0;
+  height: 0;
+  overflow: hidden;
+  transition: 1s;
+}
+
+button::after {
+  content: '';
+  position: relative;
+  width: 500px;
+  border-bottom: 1px gray solid;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  justify-content: center;
+  list-style: none;
+  align-items: center;
+  margin: 0%;
+  padding: 0%;
+}
+
+h2 {
+  color: red;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0%;
+  padding: 0%;
+  overflow:auto;
+}
+.flex-container .itemsL {
+  display: flex;
+  width: 45%;
+  overflow:auto;
+  flex-direction: column;
+}
+.flex-container .itemsR {
+  display: flex;
+  width: 45%;
+  overflow:auto;
+  flex-direction: column;
+}
+.splitter {
+  display: flex;
+  overflow:auto;
+  flex-direction: column;
+  border-left: 2px solid green;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.menu-item {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+#test {
+  margin: 0%;
+  padding: 0%;
+  width: 100%;
 }

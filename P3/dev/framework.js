@@ -47,7 +47,7 @@ function minify(content) {
         }
 
         return Promise.all(markup, styles);
-    }
+      }
 
 
 //public:
