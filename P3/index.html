@@ -1,22 +1,25 @@
 <html lang="nb" dir="ltr">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-        
-        <title>P3</title>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
 
-        <link rel="stylesheet" href="./global.styles.css">
-        
-        <script src="dev/framework.js"></script>
-        <script src="assets/code/navbar.js"></script>
-    </head>
-    <body>
-        <div id="home">
-            <div data-component="navbar"></div>
-            <div data-component="header"></div>
-            <main>
-                <div data-component="menu"></div>
-            </main>
-        </div>
-    </body>
+    <title>P3</title>
+
+    <link rel="stylesheet" href="./global.styles.css" />
+    <script src="dev/framework.js"></script>
+    <script src="assets/code/navbar.js"></script>
+    <script src="https://cdn.apple-mapkit.com/mk/5.x.x/mapkit.js"></script>
+  </head>
+  <body>
+    <div id="home">
+      <div data-component="navbar"></div>
+      <div data-component="header"></div>
+      <main><div data-component="menu"></div></main>
+      <div data-component="contact"></div>
+      <script src="assets/code/map.js"></script>
+    </div>
+  </body>
 </html>
