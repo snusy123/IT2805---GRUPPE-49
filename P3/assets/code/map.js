@@ -1,5 +1,21 @@
 (function(public) {
     document.addEventListener('DOMReady', function() {
+        initMapKit()
+        createMap()
+        addMarker()
+    })
+
+    function initMapKit() {
+        mapkit.init({
+            authorizationCallback: function(done) {
+                done(
+                    "eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Ikc4UTk3VllBMlIifQ.eyJpc3MiOiJWWDVZTVg5N1g1IiwiaWF0IjoxNTcyODEyNzQ5LCJleHAiOjE2MDc2MzE5NDl9.CE2Yw5stFAJt-9wM6gndbEBT-eXwEjyMEGZ98mn-OwE796OEoTUPut9FHdOJHbgKs9Cgd4ASue_r0baYudBeJw"
+                );
+            }
+        });
+    }   
+    
+    function createMap() {
         var center = new mapkit.CoordinateRegion(
             new mapkit.Coordinate(63.4290637, 10.3130715),
             new mapkit.CoordinateSpan(0.03, 0.05)
@@ -15,9 +31,7 @@
             showsMapTypeControl: false,
             showsCompass: mapkit.FeatureVisibility.Hidden,
         });
-
-        addMarker()
-    })
+    }
 
     function addMarker() {
         var MarkerAnnotation = mapkit.MarkerAnnotation;
@@ -34,14 +48,6 @@
         public.map.showItems(restaurantAnnotation);
     }
 })(this)
-
-mapkit.init({
-    authorizationCallback: function(done) {
-        done(
-            "eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Ikc4UTk3VllBMlIifQ.eyJpc3MiOiJWWDVZTVg5N1g1IiwiaWF0IjoxNTcyODEyNzQ5LCJleHAiOjE2MDc2MzE5NDl9.CE2Yw5stFAJt-9wM6gndbEBT-eXwEjyMEGZ98mn-OwE796OEoTUPut9FHdOJHbgKs9Cgd4ASue_r0baYudBeJw"
-        );
-    }
-});
 
 // var clickannotation;
 // // Drop an annotation where a Shift-click is detected:
