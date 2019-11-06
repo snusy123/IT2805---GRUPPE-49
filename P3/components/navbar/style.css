@@ -23,7 +23,6 @@
 }
 
 .sticky {
-    background-color: red;
     position: fixed !important;
     top: 0;
 }
