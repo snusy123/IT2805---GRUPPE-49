@@ -22,13 +22,9 @@
 
     function updateStickyPosition() {
         if (window.pageYOffset >= offset) {
-            console.log('added sticky')
             this.navbar.classList.add("sticky")
-            return true
         } else {
-            console.log('removed sticky')
             this.navbar.classList.remove("sticky")
-            return false
         }
     }
     
