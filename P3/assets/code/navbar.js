@@ -42,6 +42,6 @@
         window.scrollTo({
             top: target,
             behavior: "smooth"
-        });
+        })
     }
-})(this);
+})(this)

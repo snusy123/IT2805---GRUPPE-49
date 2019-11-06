@@ -1,55 +1,26 @@
 .hh-image {
-    width: 100vw;
-    height: calc(100vh - var(--nav-size));
+    width: 100%;
+    height: 800px;
+    max-height: calc(100vh - var(--nav-size));
 
-    box-sizing: border-box;
-    padding: 0 44px;
-
-    background: var(--color-bk) url('./assets/img/header-1.jpg') center no-repeat;
-    background-size: contain;
-    overflow: hidden;
+    position: relative;
 }
 
-.container{
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  height: 300px;
+.hh-slide {
+    position: absolute;
+    left: 0;
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    width: 100%;
+    height: 100%;
+    
+    transition: opacity 1300ms ease-in-out;
+    opacity: 1;
 }
 
-.map{
-  width: 100%;
-}
-
-.hours{
-  background-color: #800000;
-  text-align: center;
-  line-height: 25px;
-  width:100%;
-}
-
-#slides{
-  width:90%;
-  height: 500px;
-}
-
-.mySlides{
-  width:auto;
-  height: auto;
-  display:none
-}
-
-.slidescontainer{
-  width:90%;
-  height: 500px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-bottom: 50px;
-}
-
-#header {
-  text-align: center;
-  width: 100%;
-  height: 100%;
-  margin-bottom: 100px;
+.hh-slide.faded {
+    opacity: 0;
 }
