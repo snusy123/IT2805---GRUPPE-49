@@ -1,5 +1,5 @@
-@import 'sections/navbar/animations.css';
-@import 'sections/navbar/hamburger.css';
+@import 'components/navbar/animations.css';
+@import 'components/navbar/hamburger.css';
 
 #navbar {
     /* Position */
