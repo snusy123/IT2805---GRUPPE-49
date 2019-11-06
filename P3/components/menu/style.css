@@ -1,26 +1,34 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 #mainMenu {
   background-color: #fbf6e5;
-  display: flex;
-  justify-content: center;
-  width: 75%;
+  width: 100%;
   margin: 0%;
   padding: 0%;
 }
 
-.mm-button {
+.mm-menumenu {
+  width: 100%;
+}
+
+.mm-toptext {
+  text-align: center;
+  vertical-align: text-top;
+  color: #303030;
+}
+
+.mm-click-buttons {
   text-align: center;
   font-size: 24px;
-  color:red;
   font-weight: 525;
   background:none;
   border: none;
   outline: none; 
-  margin: 0 auto;
-  transition: 0.3s;
+  margin: auto 0;
+  padding-bottom: 2.5%;
+  width: 100%;
 }
 
-.mm-button:hover {
+.mm-click-buttons:hover {
   color: darkred;
 }
 
@@ -28,67 +36,71 @@
   display: none;
 }
 
-.mm-menu-item .buttons:checked ~ button div {
-  display: block;
-  line-height:0;
-  height: 0;
-  overflow: hidden;
-  transition: 1s;
-}
-
-.mm-button::after {
-  content: '';
-  position: relative;
-  width: 500px;
-  border-bottom: 1px gray solid;
-}
-
 .mm-meny {
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   width: 75%;
   justify-content: center;
   list-style: none;
   align-items: center;
-  margin: 0%;
+  margin: 0 auto;
   padding: 0%;
+  align-self: center;
+}
+
+.mm-menu-item .mm-buttons:checked ~ .mm-menynonflex {
+  display: block;
+  max-height: 0;
+  overflow: hidden;
+}
+
+.mm-menynonflex {
+  overflow: hidden;
+  max-height: 146.38px;
+  transition: 1s;
 }
 
 .mm-flex-container {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
+  width: 100%;
   margin: 0%;
   padding: 0%;
-  overflow:auto;
+  overflow: hidden;
+  transition: height 2s;
 }
-.mm-flex-container .itemsL {
+
+.mm-flex-container .mm-itemsL,
+.mm-flex-container .mm-itemsR {
   display: flex;
   width: 45%;
   overflow:auto;
   flex-direction: column;
 }
-.mm-flex-container .itemsR {
+
+.mm-itemsLD, .mm-itemsRD {
   display: flex;
-  width: 45%;
-  overflow:auto;
   flex-direction: column;
+  margin-top: 2.5%;
+  margin-bottom: 2.5%;
 }
+
 .mm-splitter {
   display: flex;
   overflow:auto;
   flex-direction: column;
-  border-left: 2px solid green;
+  border-left: 2px solid #303030;;
   margin-left: 5%;
   margin-right: 5%;
+  margin-top: 15px;
 }
+
 .mm-menu-item {
   display: flex;
   justify-content: center;
   width: 100%;
-}
-.mm-click-buttons {
-  margin: 0%;
-  padding: 0%;
-  width: 100%;
+  margin-top: 2.5%;
+  margin-bottom: 2.5%;
 }
