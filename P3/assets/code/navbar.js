@@ -11,6 +11,7 @@
     })
     
     window.addEventListener('scroll', function(e) {
+        // console.log(windows.pageYOffset)
         if (window.pageYOffset >= offset) {
             this.navbar.classList.add("sticky")
         } else {

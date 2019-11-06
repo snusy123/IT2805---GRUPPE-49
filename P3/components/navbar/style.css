@@ -5,6 +5,7 @@
     /* Position */
     position: absolute;
     width: 100vw;
+    max-width: 100%;
     z-index: 9999;
 
     /* Unselectable text */
