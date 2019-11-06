@@ -14,12 +14,6 @@ menu{
   font-size: 30px;
 }
 
-.container{
-  display: flex;
-  flex-direction: row;
-  width: 100vw;
-}
-
 .map{
   width: 45%;
   height: 250px;
