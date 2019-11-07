@@ -12,10 +12,14 @@
 
 .mm-toptext {
   text-align: center;
-  vertical-align: text-top;
-  color: #303030;
+  margin-bottom: 1%;
+  padding-top: 3%;
+  color: #a1624c;
 }
 
+.mm-paratext {
+  color: #303030;
+}
 .mm-click-buttons {
   text-align: center;
   font-size: 24px;
@@ -24,12 +28,21 @@
   border: none;
   outline: none; 
   margin: auto 0;
+  font-style: italic;
+  font-weight: 600;
+  color: #303030;
   padding-bottom: 2.5%;
   width: 100%;
+  transition: 0.25s;
+}
+
+.mm-headingtext {
+  color: #a1624c;
+  font-style: italic;
 }
 
 .mm-click-buttons:hover {
-  color: darkred;
+  color: #a1624c;
 }
 
 .mm-buttons{
@@ -92,11 +105,18 @@
   overflow:auto;
   flex-direction: column;
   border-left: 2px solid #303030;;
+  opacity: 0.3;
   margin-left: 5%;
   margin-right: 5%;
   margin-top: 15px;
 }
 
+.mm-Hsplitter {
+  border-bottom: 2px solid #303030;
+  margin-top: 2.5%;
+  opacity: 0.3;
+  overflow: hidden;
+}
 .mm-menu-item {
   display: flex;
   justify-content: center;
