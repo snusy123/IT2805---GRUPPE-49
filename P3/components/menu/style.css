@@ -102,7 +102,7 @@
 
 .mm-splitter {
   display: flex;
-  overflow:auto;
+  overflow: hidden;
   flex-direction: column;
   border-left: 2px solid #303030;;
   opacity: 0.3;
