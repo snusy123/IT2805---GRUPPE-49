@@ -1,19 +1,12 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
-#mainMenu {
-  background-color: #fbf6e5;
-  width: 100%;
-  margin: 0%;
-  padding: 0%;
+#menu {
+    background-color: #FBF6E5;
 }
 
 .mm-menumenu {
   width: 100%;
 }
 
-.mm-toptext {
-  text-align: center;
-  margin-bottom: 1%;
-  padding-top: 3%;
+#menu h2 {
   color: #a1624c;
 }
 

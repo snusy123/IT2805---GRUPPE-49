@@ -7,12 +7,20 @@
 }
 
 /* Wrapper */
-#home {
-    background-color: #303030;
+.wrapper {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #242422;
+}
+
+.component {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 45px 20px;
+    background-color: #2C2A28;
 }
 
 :root {
-    --color-bk: black;
+    --color-bk: #2B2D2F;
     --color-main: red;
 
     --nav-size: 44px;
@@ -21,6 +29,23 @@
 }
 
 /* Typography */
-h1, span, p {
-    font-family: 'Open Sans', sans-serif;
+h1 {
+    font-weight: 700;
+    text-align: center;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-size: 2.4em;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+/* XX */
+.main {
+    max-width: 1800px;
+    margin: 0 auto;
+
+    padding: 0 40px;
 }

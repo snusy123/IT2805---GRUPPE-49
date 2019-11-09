@@ -15,11 +15,11 @@
     user-select: none;
 
     /* Blur Background */
-    backdrop-filter: saturate(180%) blur(20px);
-    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    /* backdrop-filter: saturate(180%) blur(20px);
+    -webkit-backdrop-filter: saturate(180%) blur(20px); */
 
     /* Color */
-    background-color: #303030dc;
+    background-color: #242422;
 }
 
 .sticky {

@@ -1,4 +1,4 @@
-.hh-image {
+.hh-slideshow {
     width: 100%;
     height: 800px;
     max-height: calc(100vh - var(--nav-size));
@@ -25,34 +25,46 @@
     opacity: 0;
 }
 
-.flexcontainer{
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  height: 300px;
+.hh-info::after {
+    height: 100%;
+    content: '';
+    display: table;
+    clear: both;
 }
 
-.map{
-  width: 100%;
+.hh-info>div {
+    width: 50%;
+    padding-bottom: 20%;
+    float: left;
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
-#map{
-  height: 300px;
-  width: 100%;
+.hh-location {
+    background-image: url('assets/img/snapshot.png');
 }
 
-.hours{
-  color: #fcf2d8;
-  background-color: #800000;
-  text-align: center;
-  font-size: 30px;
-  width:100%;
+/* TODO: Responsive */
+.hh-hours {
+    background-image: linear-gradient(rgba(161, 98, 76, 0.9), rgba(161, 98, 76, 0.9)), url('assets/img/bk-1.jpg');
+    position: relative;
 }
 
+.hh-text {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
 
-#header {
-  text-align: center;
-  width: 100%;
-  height: 100%;
-  margin-bottom: 100px;
+    color: white;
+}
+
+.hh-hours table {
+    font-size: 2em;
+}
+
+.hh-hours td {
+    padding: 5px 20px;
 }
