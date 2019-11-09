@@ -1,60 +1,60 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="Booking.css">
-    <title>Booking</title>
-  </head>
-  <body>
-    <div class="mainBooking">
-      <h2 id="bookingHeaderValidation">Booking</h2>
-      <img src="Valpic.png" id="Validation" alt="Your order has been recieved">
-      <p id="bookingTextValidation">Your booking has been recieved!</p>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="Booking.css">
+        <title>Booking</title>
+    </head>
+    <body>
+        <div class="mainBooking">
+            <h2 id="bookingHeaderValidation">Booking</h2>
+            <img src="Valpic.png" id="Validation" alt="Your order has been recieved">
+            <p id="bookingTextValidation">Your booking has been recieved!</p>
 
 
-    <h1 id="BookingHeader">Booking</h1>
+            <h1 id="BookingHeader">Booking</h1>
 
-    <form id="form"> <!--Har ikke noe method, neppe nødvendig når det ikke sendes noe sted...-->
-        <div id="Booking">
-          <div class="upper">
-            <label for="date" class="BookingLabelUpper">Date:</label>
-            <input type="date" name="date" value="" id="date" class="BookingInputUpper">
-          </div>
+            <form id="form"> <!--Har ikke noe method, neppe nødvendig når det ikke sendes noe sted...-->
+                <div id="Booking">
+                <div class="upper">
+                    <label for="date" class="BookingLabelUpper">Date:</label>
+                    <input type="date" name="date" value="" id="date" class="BookingInputUpper">
+                </div>
 
-          <div class="upper">
-            <label for="time" class="BookingLabelUpper">Time:</label>
-            <input type="time" id="time" value="12:00" class="BookingInputUpper">
-          </div>
+                <div class="upper">
+                    <label for="time" class="BookingLabelUpper">Time:</label>
+                    <input type="time" id="time" value="12:00" class="BookingInputUpper">
+                </div>
 
 
-          <div class="upper">
-            <label for="amountGuests" class="BookingLabelUpper">Number of Guests:</label>
-            <input type="number" id="amountGuests" value="0" class="BookingInputUpper">
-          </div>
+                <div class="upper">
+                    <label for="amountGuests" class="BookingLabelUpper">Number of Guests:</label>
+                    <input type="number" id="amountGuests" value="0" class="BookingInputUpper">
+                </div>
+                </div>
+
+                <div class="lower">
+                <label for="name" class="BookingLabelLower">Name:</label>
+                <input type="text" id="name" value="" class="BookingInputLower">
+                </div>
+
+                <div class="lower">
+                <label for="phoneNumber" class="BookingLabelLower">Telephone:</label>
+                <input type="number" id="phoneNumber" max="8" min="8" class="BookingInputLower">
+                </div>
+
+                <div class="lower">
+                <label for="email" class="BookingLabelLower">E-mail:</label>
+                <input type="email" id="email" value="" class="BookingInputLower">
+                </div>
+
+                <div class="lower">
+                <label for="comments" class="BookingLabelLower">Comments:</label>
+                <textarea id="comments" rows="8" cols="49" class="BookingInputLower"></textarea>
+                <script src="Validation.js"></script>
+                <input type="submit" name="submit" value="Submit" id="submit" class="BookingSubmit">
+                </div>
+            </form>
         </div>
-
-        <div class="lower">
-          <label for="name" class="BookingLabelLower">Name:</label>
-          <input type="text" id="name" value="" class="BookingInputLower">
-        </div>
-
-        <div class="lower">
-          <label for="phoneNumber" class="BookingLabelLower">Telephone:</label>
-          <input type="number" id="phoneNumber" max="8" min="8" class="BookingInputLower">
-        </div>
-
-        <div class="lower">
-          <label for="email" class="BookingLabelLower">E-mail:</label>
-          <input type="email" id="email" value="" class="BookingInputLower">
-        </div>
-
-        <div class="lower">
-          <label for="comments" class="BookingLabelLower">Comments:</label>
-          <textarea id="comments" rows="8" cols="49" class="BookingInputLower"></textarea>
-          <script src="Validation.js"></script>
-          <input type="submit" name="submit" value="Submit" id="submit" class="BookingSubmit">
-        </div>
-    </form>
-    </div>
-  </body>
+    </body>
 </html>

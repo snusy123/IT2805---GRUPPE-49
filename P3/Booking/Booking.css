@@ -74,15 +74,12 @@ input, textarea {
 }
 
 #bookingHeaderValidation {
-  display: none;
   text-align: center;
   font-size: 60px;
 }
 
 #Validation {
-  display: none;
   width: 30%;
-  height: 30%;
   position: relative;
   margin-top: 12px;
   margin-bottom: 12px;
@@ -90,7 +87,6 @@ input, textarea {
 }
 
 #bookingTextValidation {
-  display: none;
   text-align: center;
   font-size: 40px;
   margin-bottom: 50px;
