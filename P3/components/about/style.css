@@ -1,35 +1,7 @@
-menu{
-  font-size: 30px;
-}
 
-.map{
-  width: 45%;
-  height: 250px;
-}
-
-.hours{
-  text-align: left;
-  width: 45%;
-  height: 250px;
-  line-height: 35px;
-  background-color: red;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.vinecountry{
-  width:90%;
-  height:500px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-bottom: 50px;
-}
-
-.slides{
-  width:90%;
-  height: 500px;
-  margin-left: auto;
-  margin-right: auto;
+#aboutus{
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 #about {
