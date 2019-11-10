@@ -68,3 +68,18 @@
 .hh-hours td {
     padding: 5px 20px;
 }
+
+@media screen and (max-width: 768px) {
+    .hh-location {
+        display: none;
+    }
+
+    .hh-hours {
+        width: 100% !important;
+        padding-bottom: 33vh !important;
+    }
+
+    .hh-slideshow {
+        height: 55vh;
+    }
+}
