@@ -46,7 +46,7 @@
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  width: 75%;
+  width: 97.5%;
   justify-content: center;
   list-style: none;
   align-items: center;
@@ -59,12 +59,15 @@
   display: block;
   max-height: 0;
   overflow: hidden;
+  transition: 1s;
+  transition-timing-function: cubic-bezier(0,.87,.41,.92);
 }
 
 .mm-menynonflex {
   overflow: hidden;
-  max-height: 146.38px;
-  transition: 1s;
+  max-height: 75vh;
+  transition: 1.25s;
+  
 }
 
 .mm-flex-container {
@@ -116,4 +119,11 @@
   width: 100%;
   margin-top: 2.5%;
   margin-bottom: 2.5%;
+}
+@media screen and (max-width: 768px) {
+  .mm-headingtext {
+    font-size: 16px;
+    margin-top: 10%;
+    padding: 0%;
+  }
 }
