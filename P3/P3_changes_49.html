@@ -11,18 +11,6 @@
     <title>P3 - Changes</title>
 
     <link rel="stylesheet" href="document.css" />
-
-    <!--
-      Points will be awarded for:
-      ● Efforts to find testers from the intended audience or to do live testing.
-      ● Use of a variety of devices and browser platforms.
-      ● Concise and well-structured summary of the received feedback.
-      ● Thoughtful and detailed response to the received feedback.
-      Points will be deducted for:
-      ● Missing self-reflection section.
-      ● Poor writing and lack of document structure.
-      ● Invalid HTML and CSS code. (Use the validation icons and check their results)
-    -->
   </head>
   <body>
     <div class="document-wrapper">
@@ -93,6 +81,12 @@
             Tom validated form inputs on orform.html and implemented the
             pull-down menu for each page. <br /><br />
             Guri implemented the map for Apple maps, using Apples Mapkit.
+
+            <p>
+                Imre implemented the navbar and header components, aswell as the global styles. 
+                After setting up the component import framework, Imre also helped with most of the final components styles.
+                He also provided the Apple Developer access for Mapkit JS.
+            </p>
           </p>
         </div>
       </section>
@@ -100,8 +94,12 @@
         <h2 class="header"><span class="bold">6 </span> Modularity</h2>
         <div class="content">
           <p>
-            Indicate how the modularity requirement was handled and who was
-            responsible for the implementation
+              Imre was responsible for handling the modularity of the site. 
+              To acheive modularity we split up the page into seperate, independent components that we could each work on independently.
+              This allowed us to work on the same page in parallell through GitHub.
+              Imre set up a simple JavaScript framework for importing the components to the main index.html.
+              Originally this framework would import a components markup aswell as its style, but we decided to instead use CSS import statements in the production build,
+              to ensure the styles would be ready and loaded when the page loads. It also cleaned up the code in the developer console of chrome.  
           </p>
         </div>
       </section>
