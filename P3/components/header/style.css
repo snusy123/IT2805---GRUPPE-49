@@ -1,9 +1,11 @@
+.hh-top {
+    position: relative;
+}
+
 .hh-slideshow {
     width: 100%;
     height: 800px;
     max-height: 80vh;
-
-    position: relative;
 }
 
 .hh-slide {
@@ -25,6 +27,20 @@
     opacity: 0;
 }
 
+.hh-overlay {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+
+    color: #fbf6e5;
+    text-align: center;
+    text-shadow: 0px 0px 5px black;
+
+    font-size: 2.5em;
+    width: 100%;
+}
+
 .hh-info::after {
     height: 100%;
     content: '';
@@ -43,12 +59,11 @@
 }
 
 .hh-location {
-    background-image: url('assets/img/snapshot.png');
+    background-image: url('../../assets/img/snapshot.png');
 }
 
-/* TODO: Responsive */
 .hh-hours {
-    background-image: linear-gradient(rgba(161, 98, 76, 0.9), rgba(161, 98, 76, 0.9)), url('assets/img/bk-1.jpg');
+    background-image: linear-gradient(rgba(161, 98, 76, 0.9), rgba(161, 98, 76, 0.9)), url('../../assets/img/bk-1.jpg');
     position: relative;
 }
 
@@ -91,5 +106,9 @@
 @media screen and (max-width: 768px) {
     .hh-slideshow {
         height: 55vh;
+    }
+
+    .hh-overlay {
+        font-size: 6vw;
     }
 }

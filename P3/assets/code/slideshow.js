@@ -1,10 +1,10 @@
 const SHOW_TIME = 30000;
 const FADE_TIME = 1300;
 
-const PATH = 'assets/img/';
+const PATH = 'assets/img/headers/';
 const SLIDES = [
-    'header-1.jpg',
-    'header-2.jpg'
+    'trevi.jpg',
+    'interior.jpg'
 ];
 
 (function() {

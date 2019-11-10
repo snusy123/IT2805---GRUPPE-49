@@ -1,5 +1,5 @@
-@import 'components/navbar/animations.css';
-@import 'components/navbar/hamburger.css';
+@import 'animations.css';
+@import 'hamburger.css';
 
 #navbar {
     /* Position */
@@ -14,10 +14,6 @@
     -ms-user-select: none;
     user-select: none;
 
-    /* Blur Background */
-    /* backdrop-filter: saturate(180%) blur(20px);
-    -webkit-backdrop-filter: saturate(180%) blur(20px); */
-
     /* Color */
     background-color: #242422;
 }
@@ -29,7 +25,7 @@
 
 /* Content Wrapper */
 .gn-content {
-    max-width: var(--max-width);
+    max-width: 980px;
     margin: 0 auto;
     padding: 0 44px;
     position: relative;
@@ -44,12 +40,16 @@
 /* Items Style */
 .gn-item {
     font-size: 21px;
-    line-height: var(--nav-size);
-    font-weight: 400;
+    line-height: 44px;
+    font-weight: 300;
 }
 
 /** Large Breakpoint (Laptop/Tablet) */
 @media only screen and (min-width: 768px) {
+    .gn-logo-item {
+        display: none;
+    }
+
     .gn-header {
         text-align: center;
         color: #fbf6e5;
@@ -90,19 +90,16 @@
     .gn-list {
         /* Animate Dropdown */
         transition: height 0.66s cubic-bezier(0.645, 0.045, 0.355, 1);
-        height: var(--nav-size);
+        height: 44px;
         overflow: hidden;
     }
 
     /* Logo */
     .gn-logo-item {
-        height: var(--nav-size);
+        height: 44px;
         margin-bottom: 20px;
 
-        background-image: url('https://oliviarestauranter.no/wp-content/uploads/2017/04/logo.svg');
-        background-position: center;
-        background-size: contain;
-        background-repeat: no-repeat;
+        font-size: 1em;
     }
 
     /* Accessability Label for Logo */
@@ -134,7 +131,7 @@
 
 /* Clearfix (Fixed Navbar) */
 .gn-navbar::after {
-    height: var(--nav-size);
+    height: 44px;
     display: table;
     content: '';
     clear: both;

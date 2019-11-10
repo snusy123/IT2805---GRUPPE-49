@@ -1,12 +1,12 @@
-// Pointless
-function minify(content) {
-    content = content.replace( /\/\*(?:(?!\*\/)[\s\S])*\*\/|[\r\n\t]+/g, '' );
-    content = content.replace( / {2,}/g, ' ' );
-    content = content.replace( / ([{:}]) /g, '$1' );
-    content = content.replace( /([;,]) /g, '$1' );
-    content = content.replace( / !/g, '!' );
-    return content;
-}
+//// Easier Debugging
+// function minify(content) {
+//     content = content.replace( /\/\*(?:(?!\*\/)[\s\S])*\*\/|[\r\n\t]+/g, '' );
+//     content = content.replace( / {2,}/g, ' ' );
+//     content = content.replace( / ([{:}]) /g, '$1' );
+//     content = content.replace( /([;,]) /g, '$1' );
+//     content = content.replace( / !/g, '!' );
+//     return content;
+// }
 
 //IIFE - Private functions
 (function(global) {
@@ -20,11 +20,12 @@ function minify(content) {
     }
 
     // Fetch and load components to main page
+    // Styles removed in production build in favor of CSS imports
     function loadComponents() {
         const components = document.querySelectorAll("[data-component]");
         
         markup = []
-        styles = []
+        // styles = []
 
         for(let i = 0; i < components.length; i++) {
             let id = components[i].dataset.component;
@@ -37,16 +38,17 @@ function minify(content) {
                     components[i].replaceWith(component.content.firstChild);
                 })
         
-            styles[i] = fetch(`./components/${id}/style.css`)
-                .then(data => data.text())
-                .then(text => {
-                    let style = document.createElement('style');
-                    style.innerHTML = minify(text);
-                    document.head.appendChild(style);    
-                })
+            // styles[i] = fetch(`./components/${id}/style.css`)
+            //     .then(data => data.text())
+            //     .then(text => {
+            //         let style = document.createElement('style');
+            //         style.innerHTML = minify(text);
+            //         document.head.appendChild(style);    
+            //     })
         }
 
-        return Promise.all(markup, styles);
+        // return Promise.all(markup, styles);
+        return Promise.all(markup);
       }
 
 
