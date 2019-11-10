@@ -8,6 +8,18 @@
     max-height: 80vh;
 }
 
+.hh-slideshow::after {
+    position: absolute;
+    content: '';
+    display: table;
+
+    height: 100%;
+    width: 100%;
+
+    background: rgb(0,0,0, 0.3);
+    background: linear-gradient(180deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.2) 2%, rgba(0,0,0,0.2) 98%, rgba(0,0,0,0.5) 100%);
+}
+
 .hh-slide {
     position: absolute;
     left: 0;

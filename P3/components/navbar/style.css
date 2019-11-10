@@ -51,6 +51,9 @@
     }
 
     .gn-header {
+        padding-top: 20px;
+        padding-bottom: 10px;
+
         text-align: center;
         color: #fbf6e5;
         font-size: 27px;
