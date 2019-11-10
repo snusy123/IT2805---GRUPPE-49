@@ -31,7 +31,7 @@
         var restaurantAnnotation = new mapkit.MarkerAnnotation(restaurant, {
             color: "maroon",
             title: "Restaurant",
-            subtitle: "Gamel brynsvei, 7020, Trondheim",
+            subtitle: "Gamle Bynesvei, 7020, Trondheim",
             selected: "true",
             glyphText: ":)"
         });

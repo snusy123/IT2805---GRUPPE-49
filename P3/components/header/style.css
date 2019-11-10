@@ -1,5 +1,11 @@
 .hh-top {
     position: relative;
+
+    /* Unselectable text */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .hh-slideshow {
