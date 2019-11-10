@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Gruppe 49" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+
+    <title>P3 - Changes</title>
+
+    <link rel="stylesheet" href="document.css" />
+
+    <!--
+      Points will be awarded for:
+      ● Efforts to find testers from the intended audience or to do live testing.
+      ● Use of a variety of devices and browser platforms.
+      ● Concise and well-structured summary of the received feedback.
+      ● Thoughtful and detailed response to the received feedback.
+      Points will be deducted for:
+      ● Missing self-reflection section.
+      ● Poor writing and lack of document structure.
+      ● Invalid HTML and CSS code. (Use the validation icons and check their results)
+    -->
+  </head>
+  <body>
+    <div class="document-wrapper">
+      <h1 class="header">P3 - Changes</h1>
+      <section>
+        <h2 class="header"><span class="bold">1 </span> Document Details</h2>
+        <div class="content">
+          <p>
+            <span class="bold">Group 49 -</span> Lars, Guri, Imre, Emil and
+            Morten
+          </p>
+          <p><span class="bold">IT2805</span> November 2019</p>
+        </div>
+      </section>
+      <section>
+        <h2 class="header">
+          <span class="bold">2 </span> Administrative Details
+        </h2>
+        <div class="content">
+          <p><span class="bold">Website name:</span> Capisco Benissimo</p>
+          <p><span class="bold">Client:</span> Jonas Konte</p>
+          <p><span class="bold">Contact:</span> Jonas Konte</p>
+        </div>
+      </section>
+      <section>
+        <h2 class="header"><span class="bold">3</span> Final work divison</h2>
+        <div class="content">
+          <p>
+            Explicitly state (since it may have changed since the design
+            document), which person worked on which files, including CSS and
+            JavaScript files, and who produced the artwork (banner and button
+            design, etc.). <br /><br />
+            Our page is build up with a lot of different pages connected through
+            index.html. We did this to make it easy to delegate the workload and
+            have an organized way of working togehther on the same "main page".
+            We followed the original plan on who should do what. Guri worked on
+            the contact page. This includes the component.html and the
+            style.css. She also implemented the apple maps on map.js.
+          </p>
+        </div>
+      </section>
+      <section>
+        <h2 class="header">
+          <span class="bold">4 </span> Changes made and why
+        </h2>
+        <div class="content">
+          <h3>Map and contact changes</h3>
+          <p>
+            While working on the map and contact page the map felt a little
+            small since the restaurants position on the map is so far off from
+            the nearest city. Therefore it was decided to put the map and
+            contact under eachother so it would be easier for the user to look
+            at and use the map. It also made more sense to give the map a darker
+            theme to match the rest of the page and not stick out like a sore
+            thumb. The styling of the contacts got a little pop of color to not
+            look so flat and tie it in with the general cholorscheme of the rest
+            of the mainpage.
+          </p>
+        </div>
+      </section>
+      <section>
+        <h2 class="header"><span class="bold">5</span> Minimum requirements</h2>
+        <div class="content">
+          <p>
+            How each of the team members fulfilled their minimum requirements.
+            For example: Rachel fulfilled her JavaScript requirements with a
+            user-defined function on intro.html and rollovers on members.html.
+            Tom validated form inputs on orform.html and implemented the
+            pull-down menu for each page. <br /><br />
+            Guri implemented the map for Apple maps, using Apples Mapkit.
+          </p>
+        </div>
+      </section>
+      <section>
+        <h2 class="header"><span class="bold">6 </span> Modularity</h2>
+        <div class="content">
+          <p>
+            Indicate how the modularity requirement was handled and who was
+            responsible for the implementation
+          </p>
+        </div>
+      </section>
+      <section>
+        <h2 class="header"><span class="bold">7 </span> Plan</h2>
+        <div class="content container">
+          <div>
+            <p><span class="bold">Filestructure</span></p>
+            <ul>
+              <li>index.html</li>
+              <li>global.styles.css</li>
+              <li>
+                components
+                <ul>
+                  <li>
+                    navbar
+                    <ul>
+                      <li>component.html</li>
+                      <li>style.css</li>
+                    </ul>
+                  </li>
+                  <li>
+                    header
+                    <ul>
+                      <li>component.html</li>
+                      <li>style.css</li>
+                    </ul>
+                  </li>
+                  <li>
+                    booking
+                    <ul>
+                      <li>component.html</li>
+                      <li>style.css</li>
+                    </ul>
+                  </li>
+                  <li>
+                    menu
+                    <ul>
+                      <li>component.html</li>
+                      <li>style.css</li>
+                    </ul>
+                  </li>
+                  <li>
+                    about
+                    <ul>
+                      <li>component.html</li>
+                      <li>style.css</li>
+                    </ul>
+                  </li>
+                  <li>
+                    contact
+                    <ul>
+                      <li>component.html</li>
+                      <li>style.css</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                assets
+                <ul>
+                  <li>
+                    img
+                    <ul>
+                      <li>header-1.png</li>
+                      <li>header-2.png</li>
+                      <li>header-3.png</li>
+                    </ul>
+                  </li>
+                  <li>
+                    code
+                    <ul>
+                      <li>slideshow.js</li>
+                      <li>map.js</li>
+                      <li>navbar.js</li>
+                      <li>booking.js</li>
+                      <li>menu.js</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                dev
+                <ul>
+                  <li>framework.js</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <p>
+              <span class="bold">Testing and final changes</span> 05.11 - 09.11
+            </p>
+            <div class="tight">
+              <span class="bold">Morten</span>
+              <p>Header - <span class="bold">20.10</span></p>
+              <p>Slideshow.js - <span class="bold">20.10</span></p>
+              <p>About - <span class="bold">25.10</span></p>
+            </div>
+            <div class="tight">
+              <span class="bold">Lars</span>
+              <p>Booking - <span class="bold">20.10</span></p>
+              <p>Validation.js - <span class="bold">25.10</span></p>
+            </div>
+            <div class="tight">
+              <span class="bold">Guri</span>
+              <p>Contact - <span class="bold">20.10</span></p>
+              <p>Map.js - <span class="bold">25.10</span></p>
+            </div>
+            <div class="tight">
+              <span class="bold">Imre</span>
+              <p>Navbar - <span class="bold">25.10</span></p>
+              <p>Navbar.js - <span class="bold">25.10</span></p>
+            </div>
+            <div class="tight">
+              <span class="bold">Emil</span>
+              <p>Menu - <span class="bold">25.10</span></p>
+              <p>Menu.js - <span class="bold">25.10</span></p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
